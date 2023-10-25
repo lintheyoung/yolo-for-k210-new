@@ -18,6 +18,16 @@
 - cudnn7.4.2
 - 其它扩展你可以使用 `pip3 install -r requirements.txt` 命令添加。
 
+conda create -n tf python=3.7
+conda activate tf
+conda install -c conda-forge cudatoolkit=10.0 cudnn=7.6.5
+pip install tensorflow-gpu==1.15
+
+Note:
+一个tensorflow版本与cuda、cudnn的兼容表
+
+https://www.tensorflow.org/install/source#gpu
+
 2. 30显卡系列
 
 - windows-wsl-ubuntu20.04
